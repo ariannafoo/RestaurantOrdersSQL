@@ -1,3 +1,5 @@
+-- Objective 1
+
 USE restaurant_db;
 
 -- 1. View the menu_items table 
@@ -34,7 +36,7 @@ FROM menu_items
 WHERE category = 'Italian'
 ORDER BY price DESC;
 
--- 6. How many dishes are in each category? 
+-- 6. How many dighes are in each category? 
 -- No need for DISTINCT(category) since group by categorizes values into unique groups
 SELECT category, COUNT(item_name) as num_dishes
 FROM menu_items
